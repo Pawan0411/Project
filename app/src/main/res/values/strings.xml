@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="label_username">USERNAME</string>
+    <string name="label_password">PASSWORD</string>
+    <string name="label_login">DATE!</string>
+    <string name="title_activity_navigation">Navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
