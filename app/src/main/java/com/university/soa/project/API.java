@@ -16,18 +16,16 @@ import okhttp3.RequestBody;
  * Created by pkumar on 5/3/18.
  */
 
-public class API {
 
     /**
-     * @author Mojito9542
+     * @author Mohit agarwal
      * @version 1.2
      * @since  03-05-2018.
      */
 
-// usage: String var_name = new api().execute(reg. id, password).get();
 
 
-    public class api extends AsyncTask<String, Void, String> {
+    public class API extends AsyncTask<String, Void, String> {
 
 
         protected void onPreExecute() {
@@ -52,6 +50,8 @@ public class API {
 
                 String loginJson = okHttpClient.newCall(request)
                         .execute().body().string();
+                if(loginJson.equals("{}"))
+                    return new String("user not found!!!");
                 String name = new JSONObject(loginJson).getString("name");
                 return name;
 
@@ -87,4 +87,4 @@ public class API {
 
 
 
-}
+
